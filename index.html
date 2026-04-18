@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webbsite — Alyssa Webb</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Webbsite | Alyssa Webb</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/styles.css">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="/js/script.js" defer></script>
 </head>
 <body>
 
 <nav>
   <div class="nav-brand" onclick="showPage('home')">
-    Webbsite
-    <small>Alyssa Webb</small>
+    webbsite
   </div>
   <div class="nav-links">
     <button class="nav-link active" onclick="showPage('home', this)">About me</button>
     <button class="nav-link" onclick="showPage('resume', this)">Resume</button>
     <button class="nav-link" onclick="showPage('interests', this)">Interests</button>
-    <button class="nav-link" onclick="showPage('projects', this)">Projects</button>
+    <button class="nav-link" onclick="showPage('portfolio', this)">Portfolio</button>
     <button class="nav-link" onclick="showPage('social', this)">Social</button>
   </div>
 </nav>
@@ -28,47 +29,44 @@
 <div id="page-home" class="page active">
   <div class="hero">
     <div class="hero-inner">
-      <div class="hero-avatar">AW</div>
+      <div class="hero-avatar">
+        <img src="/images/webb_headshot.jpg" alt="Alyssa Webb">
+      </div>
       <h1>Alyssa Webb</h1>
       <div class="hero-role">Computer Science · CU Boulder · Class of 2027</div>
       <div class="hero-tagline">Software Engineering & Data Analytics</div>
-      <div class="hero-photos">
-        <div class="hero-photo">
-          <div class="hero-photo-placeholder">
-            <span>Professional Headshot</span>
-          </div>
-        </div>
-        <div class="hero-photo">
-          <div class="hero-photo-placeholder">
-            <span>Interest Photo<br>(Pottery/Gaming)</span>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 
   <div class="container">
-    <div class="section-label">Welcome</div>
+    <div class="section-label">Welcome!! 🌸</div>
     <div class="about-text">
-      <p>Hello! I am a Computer Science student at the University of Colorado Boulder, uniquely positioned at the intersection of Software Engineering and Data Analytics. In an era where data is the new oil, I have chosen to build a dual foundation: the technical discipline to engineer robust systems and the analytical insight to extract tangible value from the information those systems generate.</p>
-      
-      <p>My background isn't just about writing code—it’s about solving problems for people. Through my current work with Boulder Artemis Consulting, I act as a bridge between complex data infrastructures and actionable business insights. Whether I am optimizing a data lake in Microsoft Fabric or developing a test-driven Java application like "Deckfall," my goal remains the same: to create tools that are as functional as they are insightful. I believe that the best software doesn't just "work"—it empowers the user to make better decisions.</p>
+      <p>Hi, I'm Alyssa, a third-year Computer Science student at the University of Colorado Boulder with a focus on Software Engineering and Data Analytics. I'm also a Dean's List student with a 3.35 GPA, and I hold a Certificate of Business Administration from Front Range Community College, which gives me a practical lens for understanding how technology decisions affect real organizations.</p>
 
-      <p>This digital portfolio serves as more than just a landing page; it is a 360-degree view of my capabilities. In a digital landscape where personal brands often feel like "hollow robots," I want to show the human behind the keyboard. Beyond the repositories on my GitHub and the milestones on my LinkedIn, you will find a narrative of my technical growth and my personal interests. Visitors will find a deep dive into my academic projects, my contributions to the Society of Women Engineers (SWE), and a glimpse into the hobbies that keep my creativity sharp, from pottery to cooking and gaming. I am currently seeking opportunities for Summer 2026 that will allow me to apply this hybrid skillset to real-world challenges.</p>
+      <p>My technical foundation spans Python, Java, SQL, JavaScript, and C++, along with tools like Microsoft Fabric, Power BI, Docker, and PostgreSQL. But more than any individual tool, I care about building things that work well and communicate clearly: whether that's a data pipeline, a full-stack application, or a dashboard that makes complex information easy to act on.</p>
+
+      <p>I'm currently working as a Data Analyst Consultant at Boulder Artemis Consulting, where I'm building forecasting models and Power BI dashboards for Vital Farms, helping the company understand what drives egg production at the farm level. I also serve as a Computer Science Education Lab Ambassador at CU Boulder, where I support students in navigating coursework and campus resources.</p>
+
+      <p>I'm excited to share that I've accepted a role as a Data Analyst at Farm Credit of Southern Colorado, starting this summer. I look forward to contributing to their work in agricultural finance and continuing to grow as a data professional.</p>
+
+      <p>Outside of work and school, I stay active by hiking the trails around Boulder, experiment in the kitchen, and unwind with games like World of Warcraft and Stardew Valley. This portfolio is a full picture of who I am - technically, professionally, and personally. Take a look around :D!</p>
     </div>
 
     <div class="section-label">Skills &amp; tools</div>
     <div class="skill-tags">
       <span class="skill-tag">Python</span>
       <span class="skill-tag">Java</span>
+      <span class="skill-tag">C++</span>
       <span class="skill-tag">SQL</span>
       <span class="skill-tag">HTML / CSS</span>
       <span class="skill-tag">JavaScript</span>
       <span class="skill-tag">Node.js</span>
       <span class="skill-tag">Microsoft Fabric</span>
       <span class="skill-tag">Power BI</span>
-      <span class="skill-tag">Git &amp; GitHub</span>
       <span class="skill-tag">Docker</span>
+      <span class="skill-tag">PostgreSQL</span>
+      <span class="skill-tag">Git &amp; GitHub</span>
+      <span class="skill-tag">Agile / Scrum</span>
     </div>
   </div>
 </div>
@@ -76,65 +74,71 @@
 <div id="page-resume" class="page">
   <div class="container">
     <div class="section-label">Resume / CV</div>
+    <div class="resume-actions">
+      <a class="resume-download-btn"
+         href="https://drive.google.com/file/d/1-yeMEf5vMtyFNXZmP25-BjhHk75rmZf4/view"
+         target="_blank">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+          <polyline points="7 10 12 15 17 10"/>
+          <line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+        Open / Download PDF
+      </a>
+    </div>
     <div class="resume-embed-box">
-        <iframe src="https://drive.google.com/file/d/1-yeMEf5vMtyFNXZmP25-BjhHk75rmZf4/preview" title="Resume" width="100%" height="600px" allow="autoplay"></iframe>
+      <iframe
+        src="https://drive.google.com/file/d/1-yeMEf5vMtyFNXZmP25-BjhHk75rmZf4/preview"
+        title="Alyssa Webb | Resume"
+        allow="autoplay">
+      </iframe>
     </div>
   </div>
 </div>
 
 <div id="page-interests" class="page">
   <div class="container">
-    <div class="section-label">My life outside of work...</div>
+    <div class="section-label">Outside of work</div>
     <div class="card-grid">
-      
+
       <div class="card">
         <div class="card-img">
-          <div class="card-img-placeholder"><span>Getting Outdoors!</span></div>
+            <img src="/images/hike_gmom.JPG" alt="Alyssa Webb">
         </div>
         <div class="card-body">
-          <div class="card-title">Hiking, Walking, Working out!</div>
-          <div class="card-desc">
-            When I’m not behind a screen, I prioritize spending time outdoors to stay grounded. 
-            I frequently go hiking and walking with my family around Boulder, which helps me 
-            recharge and maintain a healthy work-life balance. These excursions allow me to 
-            appreciate the local landscape, clear my mind for complex problem-solving, and 
-            value the importance of community and connection outside of a technical environment.
-          </div>
-          <span class="card-tag">Hobby</span>
+          <div class="card-title">Outdoors & Family </div>
+          <div class="card-desc">Living in Boulder makes it easy to stay active. I hike regularly and work out to stay balanced; time outdoors helps me reset and think more clearly. The image above is me and my grandma at Hanging Lake! :)</div>
         </div>
       </div>
 
       <div class="card">
         <div class="card-img">
-          <div class="card-img-placeholder"><span>Cooking & Food</span></div>
+            <img src="/images/cooking.jpg" alt="Alyssa Webb">
         </div>
         <div class="card-body">
-          <div class="card-title">Cooking / Trying new Food!</div>
-          <div class="card-desc">
-            I have recently started exploring the art of cooking, which has been a rewarding 
-            challenge. I've enjoyed learning to bake pretzels and mastering the grill, though 
-            I did once manage to burn pasta—an embarrassing feat I didn't think was possible! 
-            Since then, I’ve been putting my skills to the test by trying complex new recipes 
-            and discovering how much creativity goes into a great meal.
-          </div>
-          <span class="card-tag">Hobby</span>
+          <div class="card-title">Cooking</div>
+          <div class="card-desc">I've been expanding my cooking skills recently, from baking pretzels to grilling. I enjoy the creative problem-solving that goes into learning new recipes.</div>
         </div>
       </div>
 
+
       <div class="card">
         <div class="card-img">
-          <div class="card-img-placeholder"><span>Gaming</span></div>
+            <img src="/images/deftones.jpg" alt="Alyssa Webb">
+        </div>
+        <div class="card-body">
+          <div class="card-title">Live Music</div>
+          <div class="card-desc">I've been going to concerts regularly over the past two years. Recent shows include Foo Fighters, Deftones, Sublime, Cypress Hill, Wiz Khalifa, and more. Here I am at Ball Arena for Deftones with my dad!!</div>
+        </div>
+      </div>
+
+            <div class="card">
+        <div class="card-img">
+            <img src="/images/junimo.webp" alt="Alyssa Webb">
         </div>
         <div class="card-body">
           <div class="card-title">Gaming</div>
-          <div class="card-desc">
-            Gaming is where my interest in software and computers first began. While I love the 
-            logic behind strategy games, I am a huge fan of MMOs like World of Warcraft, 
-            which I enjoy playing with my dad. Exploring titles like Stardew Valley, Teardown, 
-            and Project Zomboid allows me to appreciate different game mechanics and 
-            storytelling styles, fueling my own aspirations in software development.
-          </div>
-          <span class="card-tag">Hobby</span>
+          <div class="card-desc">Gaming sparked my interest in software development. I enjoy MMOs like World of Warcraft as well as titles like Stardew Valley and Project Zomboid.</div>
         </div>
       </div>
 
@@ -142,87 +146,141 @@
   </div>
 </div>
 
-<div id="page-projects" class="page">
+<div id="page-portfolio" class="page">
   <div class="container">
-    <div class="section-label">Academic &amp; professional highlights</div>
+
+    <div class="section-label">Experience</div>
     <div class="card-grid">
+
       <div class="card">
-        <div class="card-img">
-          <div class="card-img-placeholder"><span>Boulder Artemis Consulting</span></div>
-        </div>
         <div class="card-body">
-          <div class="card-title">Data Analyst</div>
-          <div class="card-desc">Working with Boulder Artemis has provided me with invaluable client-facing experience. I’ve mastered tools like Microsoft Fabric and Power BI to help businesses understand their data. This role has taught me how to manage data lakes and use semantic models for deep analysis, showing me how data impacts real-world business decisions beyond the classroom.</div>
+          <div class="card-title">Data Analyst Consultant | Boulder Artemis Consulting</div>
+          <div class="card-desc">Building forecasting models and Power BI dashboards for Vital Farms, helping the business understand farm-level production drivers and track results against company targets. Working within Microsoft Fabric to manage data pipelines and semantic models.</div>
           <span class="card-tag">Data Analysis</span>
-          <span class="card-tag">Microsoft Fabric</span>
+          <a class="card-link" href="https://www.artemisconsultingboulder.com/"> ◀ Check out Artemis Consulting!</a>
         </div>
       </div>
 
       <div class="card">
-        <div class="card-img">
-          <div class="card-img-placeholder"><span>Deckfall Project</span></div>
-        </div>
         <div class="card-body">
-          <div class="card-title">Deckfall</div>
-          <div class="card-desc">"Deckfall" is a Java-based deck-building roguelike inspired by titles like Slay the Spire. This project allows me to apply Object-Oriented Design (OOD) and Test-Driven Development (TDD). Using Java2D and Swing, my partner and I are navigating the full software design cycle, focusing on clean code, inheritance, and modularity to create a scalable gaming experience.</div>
-          <span class="card-tag">Java</span>
-          <span class="card-tag">TDD</span>
+          <div class="card-title">CS Education Lab Ambassador | CU Boulder</div>
+          <div class="card-desc">Assisted computer science students by providing study resources, guidance, and a supportive learning environment. Managed collaborative study spaces and meeting room reservations to ensure accessibility and productivity.</div>
+          <span class="card-tag">Leadership</span>
+          <span class="card-tag">Education</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section-label">Academic projects</div>
+    <div class="card-grid">
+
+      <div class="card">
+        <div class="card-body">
+          <div class="card-title">Brainwidth | 🏆 HACKCU12 First Place! </div>
+          <div class="card-desc">Built at HACKCU12 (2026) with Hyma Jujjuru. Brainwidth is a full-stack study tool that parses course syllabi and uses Google Gemini's API to generate personalized study plans. Built using Google's Antigravity and MongoDB, it won first place in the Red Bull track.</div>
+          <span class="card-tag">Hackathon</span>
+          <span class="card-tag">Antigravity</span>
+          <a class="card-link" href="https://devpost.com/software/brainwidth" target="_blank">◀ Check out our DevPost</a>
+          <a class="card-link" href="https://github.com/Alyssa-Webb/Brainwidth" target="_blank">◀ View on GitHub</a>
         </div>
       </div>
 
       <div class="card">
-        <div class="card-img">
-          <div class="card-img-placeholder"><span>Audionyx Project</span></div>
-        </div>
         <div class="card-body">
-          <div class="card-title">Project Manager — Audionyx</div>
-          <div class="card-desc">In the Audionyx project, I oversaw a full-stack web application, gaining hands-on experience with Node.js, Handlebars, and PostgreSQL. I learned the intricacies of middleware and backend services, and most importantly, how to containerize the application using Docker to ensure that our development environment remained consistent and deployable across different platforms.</div>
+          <div class="card-title">Project Manager | Audionyx</div>
+          <div class="card-desc">Led a team of five to build an immersive 3D audio visualizer that processes audio from local MP3s and YouTube links in real time. Managed Agile/Scrum workflows and oversaw a backend built on Express.js and PostgreSQL.</div>
           <span class="card-tag">Full-Stack</span>
           <span class="card-tag">Docker</span>
+          <span class="card-tag">Agile</span>
+          <a class="card-link" href="https://github.com/Alyssa-Webb/Audionyx" target="_blank">◀ View on GitHub </a>
+
+          <a class="card-link" href="https://audionyx.onrender.com" target="_blank">◀ Live Demo </a>
         </div>
       </div>
+
+      <div class="card">
+        <div class="card-body">
+          <div class="card-title">Deckfall (In Progress)</div>
+          <div class="card-desc">A turn-based roguelike deckbuilder built in Java and Java2D for our Object-Oriented Analysis and Design course. Applying OOP design patterns to manage complex card behaviors with a TDD/BDD workflow.</div>
+          <span class="card-tag">Java</span>
+          <span class="card-tag">TDD / BDD</span>
+          <span class="card-tag">OOP</span>
+          <a class="card-link" href="https://github.com/Alyssa-Webb/Deckfall" target="_blank">◀ View on GitHub</a>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
 
 <div id="page-social" class="page">
   <div class="container">
-    <div class="section-label">Social profiles</div>
-    <div class="social-card">
+    <div class="section-label"> Connect with me ^^!</div>
+
+    <a class="social-card" href="https://www.linkedin.com/in/alyssamariewebb/" target="_blank">
       <div class="social-icon" style="background:#0A66C2;">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
       </div>
       <div>
-        <div class="social-name">LinkedIn</div>
-        <div class="social-desc">My LinkedIn serves as my professional anchor, showcasing my career milestones, endorsements from peers at CU Boulder, and updates on my work with Boulder Artemis Consulting.</div>
-        <a class="social-url" href="https://www.linkedin.com/in/alyssa-webb-956a50228/" target="_blank">linkedin.com/in/alyssamariewebb</a>
+        <div class="social-name">LinkedIn ↗</div>
+        <div class="social-desc">Professional experience, skills, and endorsements, including my consulting work at Boulder Artemis and my upcoming role at Farm Credit.</div>
+        <span class="social-url">linkedin.com/in/alyssamariewebb</span>
       </div>
-    </div>
+    </a>
 
-    <div class="social-card">
+    <a class="social-card" href="https://github.com/Alyssa-Webb" target="_blank">
       <div class="social-icon" style="background:#1b1f23;">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
       </div>
       <div>
-        <div class="social-name">GitHub</div>
-        <div class="social-desc">My GitHub provides transparency into my coding style and logic. Visitors can explore my repositories for "Deckfall" and other coursework to see how I apply TDD and OOD in practice.</div>
-        <a class="social-url" href="https://github.com/Alyssa-Webb" target="_blank">github.com/Alyssa-Webb</a>
+        <div class="social-name">GitHub ↗</div>
+        <div class="social-desc">Repositories for Audionyx, Brainwidth, and Deckfall, showing my work across full-stack development and game design.</div>
+        <span class="social-url">github.com/Alyssa-Webb</span>
       </div>
+    </a>
+
+    <div class="contact-form-card">
+      <div class="contact-form-title">Send me a message</div>
+      <div class="contact-form-desc">Fill out the form below and I'll get back to you as soon as I can.</div>
+
+      <form id="contact-form" onsubmit="sendEmail(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="from_name">Name</label>
+            <input class="form-input" type="text" id="from_name" name="from_name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="from_email">Email</label>
+            <input class="form-input" type="email" id="from_email" name="from_email" placeholder="your@email.com" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="subject">Subject</label>
+          <input class="form-input" type="text" id="subject" name="subject" placeholder="What's this about?" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message">Message</label>
+          <textarea class="form-input form-textarea" id="message" name="message" placeholder="Your message..." required></textarea>
+        </div>
+        <div class="form-footer">
+          <span class="form-status" id="form-status"></span>
+          <button class="form-submit" type="submit" id="form-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="22" y1="2" x2="11" y2="13"/>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+            Send message
+          </button>
+        </div>
+      </form>
     </div>
+
   </div>
 </div>
 
 <footer>
-  &copy; 2026 <span>Alyssa Webb</span> 
+  &copy; 2026 <span>Alyssa Webb</span>
 </footer>
 
-<script>
-  function showPage(id, btn) {
-    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    document.querySelectorAll('.nav-link').forEach(b => b.classList.remove('active'));
-    document.getElementById('page-' + id).classList.add('active');
-    if (btn) btn.classList.add('active');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-</script>
 </body>
